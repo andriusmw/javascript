@@ -15,7 +15,7 @@ if (a < b) {
 }
 */
 
-/*
+/* Más recomendable , más limpio
 if (a > 0 && a < 4) {
   console.log("A es mayor que cero");
 } else if (a > 3 && a < 7) {
