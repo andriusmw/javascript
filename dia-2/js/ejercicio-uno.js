@@ -8,13 +8,15 @@ const a = +prompt("Introduce A");
 const b = +prompt("Introduce B");
 const operador = prompt("Introduce operador");
 
-if (operador == "+") {
+if (isNan(a) || isNaN(b)) {
+  console.log("introduce números");
+} else if (operador == "+") {
   console.log("Resultado= " + (a + b));
-} else if (operador == "-") {
+} else if (operador === "-") {
   console.log("Resultado= " + (a - b));
-} else if (operador == "*") {
+} else if (operador === "*") {
   console.log("Resultado= " + a * b);
-} else if (operador == "/") {
+} else if (operador === "/") {
   console.log("Resultado= " + a / b);
   console.log("Resto= " + (a % b));
 } else {

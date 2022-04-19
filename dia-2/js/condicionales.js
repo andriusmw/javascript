@@ -1,5 +1,7 @@
 "use strict";
 
+//--------------------- IF ELSE ------------------------/
+
 const a = +prompt("Introduce A");
 const b = +prompt("Introduce B");
 //El + delante del prompt comvierte a número
@@ -32,3 +34,19 @@ if (a > 0) {
     console.log("A es mayor que 0");
   }
 } //else
+
+// ---------------- SWITCH ------------------------
+const fruta = prompt("¿de qué fruta quieres saber el precio?");
+switch (fruta) {
+  case "Pera":
+    console.log("40 cents");
+    break;
+  case "Manzana":
+    console.log("50 cents");
+    break;
+  case "Naranja":
+    console.log("60 cents");
+    break;
+  default:
+    console.log("seleciona entre Pera, Manzana y Naranja");
+}
