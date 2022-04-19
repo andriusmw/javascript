@@ -54,6 +54,7 @@ console.log(nombre === "samu" || edad > 18); //true
 
 //Operador Nullish coal operator
 // solo responde si lo de delante es nulo o indefinido
-const horasJugadasForm = 0;
+//y entonces nos da el valor de la derecha. sino el de la izquierda
+const horasJugadasForm = null;
 const horasJugadas = horasJugadasForm ?? "NO RESPONDIÓ";
 console.log(horasJugadas);
