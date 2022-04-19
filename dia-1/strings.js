@@ -23,3 +23,11 @@ console.log(posicionmanzana);
 //.lastIndexOf
 
 console.log(listaGrutas.lastIndexOf("manzana"));
+
+// .startsWith("Manuel")
+// .endsWith("ez")
+// .replace("manzana", "lemon")
+// .replaceAll("manzana", "lemon")
+// .toLoweCase()
+// .toUpperCase()
+// etc...
