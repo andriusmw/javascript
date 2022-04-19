@@ -50,3 +50,21 @@ switch (fruta) {
   default:
     console.log("seleciona entre Pera, Manzana y Naranja");
 }
+
+// ---------------- SWITCH ------------------------
+const idioma = prompt("introduce idioma");
+const nombre = prompt("introduce nombre");
+switch (idioma) {
+  case "ES":
+    console.log("Bienvenido" + nombre);
+    break;
+  case "EN":
+    console.log("wELLCOME" + nombre);
+    break;
+  case "GL":
+    console.log("Bienvenido en gallego" + nombre);
+    break;
+  default:
+    console.log("seleciona un idioma válido");
+    break;
+}
