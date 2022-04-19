@@ -27,3 +27,19 @@ console.log(nombre[1]);
 for (let i = 0; i < nombre.length; i++) {
   console.log(nombre[i]);
 }
+
+/*---------------*/
+let dias = 0;
+for (let pasos = 0; pasos < 16; dias++) {
+  console.log("amanece");
+  pasos = pasos + 7;
+  console.log("pasos = " + pasos);
+  if (pasos >= 16) {
+    console.log("ya se ha llegado");
+    console.log("días totales:" + dias);
+  } else {
+    console.log("llega la noche");
+    pasos = pasos - 3;
+    console.log("pasos=" + pasos);
+  }
+}
