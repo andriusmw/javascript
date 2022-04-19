@@ -38,3 +38,22 @@ console.log(edad != "18"); //false
 
 console.log(edad <= 18); //true
 console.log(edad < 18);
+
+// OPERADORES LÓGICOS
+
+// && || ??
+//EL OR se pone altGr + 1
+
+//Operador AND
+console.log(nombre === "samu" && edad >= 18); //true
+console.log(nombre === "samu" && edad > 18); //false
+
+//Operador OR
+console.log(nombre === "samu" || edad >= 18); //true
+console.log(nombre === "samu" || edad > 18); //true
+
+//Operador Nullish coal operator
+// solo responde si lo de delante es nulo o indefinido
+const horasJugadasForm = 0;
+const horasJugadas = horasJugadasForm ?? "NO RESPONDIÓ";
+console.log(horasJugadas);
