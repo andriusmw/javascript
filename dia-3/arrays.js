@@ -101,3 +101,11 @@ array1[0] = "marcos";
 console.log(array1 === array3); // true
 
 console.log(array1, array3); // iguales
+
+// iterar arrays
+
+const abecedario = ["a", "b", "c", "d"];
+
+for (let i = 0; i < abecedario.length; i++) {
+  console.log(abecedario[i]);
+}
