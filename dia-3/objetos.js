@@ -23,3 +23,8 @@ console.log(usuario[loquequiereelusuario]);
 
 //forma2
 usuario.name;
+
+//pasar objeto a array
+//Sin su datos, crea una interfaz
+
+Object.keys(usuario);
