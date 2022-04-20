@@ -109,3 +109,10 @@ const abecedario = ["a", "b", "c", "d"];
 for (let i = 0; i < abecedario.length; i++) {
   console.log(abecedario[i]);
 }
+
+//otro metodo recorrer array for of -> está hecho en javascript
+//para recorrer arrays automáticamente
+
+for (const letra of abecedario) {
+  console.log(letra);
+}
