@@ -69,6 +69,3 @@ if (numeroPropiedadesGuardar > 0) {
 ("use strict");
 
 const pacientes = [true, false, true, false, false, false, true, true];
-marca_de_verificación_blanca;
-ojos;
-manos_levantadas;
