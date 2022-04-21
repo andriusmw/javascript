@@ -35,3 +35,36 @@ const peliculas = ["peli1", "peli2", "peli3", "peli4"];
 const [a, b, c, d] = peliculas;
 //Guarda los valores en las variables, según su posición
 //la variable a con indice 0, tiene el valor peli1
+
+// Combinaciones
+
+const usuario = {
+  nombre: "pepe",
+  apellido: "fernandez",
+  edad: 38,
+  direcciones: [
+    {
+      ciudad: "La Coruña",
+      calle: "Perico de los palotes",
+    },
+    {
+      ciudad: "Málaga",
+      calle: "Cualquier plaza guay",
+    },
+  ],
+};
+
+const primeraDireccion = usuario.direcciones[0];
+
+const { ciudad: miCiudadFavorita, calle: miCallePreferida } = primeraDireccion;
+
+const {
+  nombre: nombre,
+  apellido: apellido2,
+  direcciones: [
+    { ciudad: primeraCiudad, calle: primeraCalle },
+    { calle: segundaCalle },
+  ],
+} = usuario;
+
+console.log(nombre, apellido2, primeraCiudad, primeraCalle, segundaCalle);
