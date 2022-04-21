@@ -33,16 +33,33 @@ for (let i = 0; i < pacientes.length; i++) {
     pacientesInfectados[i] = paciente;
   }
 
-  if (paciente) {
+  if (paciente == true) {
     if (i === 0) {
-      pacientesInfectados[i + 1] = true;
+      if (pacientes[i + 1] == false) {
+        pacientesInfectados[i + 1] = true;
+        pacientesInfectados[i] = false;
+      }
     } else if (i === pacientes.length - 1) {
-      pacientesInfectados[i - 1] = true;
+      if (pacientes[i - 1] == false) {
+        pacientesInfectados[i - 1] = true;
+        pacientesInfectados[i] = false;
+        //Falta algo para el último caso
+      }
     } else {
-      pacientesInfectados[i - 1] = true;
-      pacientesInfectados[i + 1] = true;
+      if (pacientes[i - 1] == false) {
+        pacientesInfectados[i - 1] = true;
+        pacientesInfectados[i + 1] = true;
+        pacientesInfectados[i] = false;
+      } else if (pacientes[i + 1] == false) {
+        pacientesInfectados[i - 1] = true;
+        pacientesInfectados[i + 1] = true;
+        pacientesInfectados[i] = false;
+      }
     }
   }
 }
 
+console.log("primer array=");
+console.log(pacientes);
+console.log("segundo array=");
 console.log(pacientesInfectados);
