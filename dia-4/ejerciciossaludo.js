@@ -11,7 +11,7 @@ const saludo = (a, b) => {
     case "GL":
       return "Ola " + a;
     default:
-      "Idioma no disponible";
+      return "Idioma no disponible";
   }
 };
 
