@@ -3,6 +3,8 @@
 const cantid = prompt("introduce numero");
 
 const crearLista = (cantidadLi) => {
+  //Coge el parámetro que le paso a la funcion crear lista
+  //Ese parámetro lo cojo del prompt y se lo paso en la llamada
   const ul = document.createElement("ul");
 
   for (let i = 0; i <= cantidadLi; i++) {
