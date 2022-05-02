@@ -1,9 +1,14 @@
 "use strict";
+const boton = document.getElementById("boton");
 
-const descip = document.getElementById(descrip).textContent;
+boton.addEventListener("click", (event) => {
+  {
+    event.preventDefault;
+    const descrip = document.getElementById("descrip").value;
 
-const ul = document.getElementById("lista");
-let li = document.createElement("li");
-li.appendChild(ul);
-
-//falta el evento y la llamada, meter en una funcion
+    const ul = document.getElementById("lista");
+    let li = document.createElement("li");
+    li.textContent = descrip;
+    ul.appendChild(li);
+  }
+});
