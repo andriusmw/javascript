@@ -2,11 +2,10 @@
 
 /******************INICIO************************* */
 const form = document.querySelector("form");
+const ul = document.getElementById("lista");
 
 const tareas = JSON.parse(localStorage.getItem("tasks")) || [];
 //Esto lee el localstorage y le pasa el array a tareas; sino hay nada, crea array vacío.
-
-const ul = document.getElementById("lista");
 
 for (const taskDescrip of tareas) {
   const li = document.createElement("li");
