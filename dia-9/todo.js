@@ -3,7 +3,7 @@ const boton = document.getElementById("boton");
 
 boton.addEventListener("click", (event) => {
   {
-    event.preventDefault;
+    event.preventDefault();
     const descrip = document.getElementById("descrip").value;
 
     const ul = document.getElementById("lista");
